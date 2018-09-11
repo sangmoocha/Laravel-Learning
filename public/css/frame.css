@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);/*!
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR);/*!
  * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
@@ -5054,6 +5054,46 @@ readers do not read off random characters that represent icons */
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
+}
+
+.blue {
+  color: #3490dc;
+}
+
+.indigo {
+  color: #6574cd;
+}
+
+.purple {
+  color: #9561e2;
+}
+
+.pink {
+  color: #f66D9b;
+}
+
+.red {
+  color: #e3342f;
+}
+
+.orange {
+  color: #f6993f;
+}
+
+.yellow {
+  color: #ffed4a;
+}
+
+.green {
+  color: #38c172;
+}
+
+.teal {
+  color: #4dc0b5;
+}
+
+.cyan {
+  color: #6cb2eb;
 }
 
 /*!
@@ -15530,16 +15570,16 @@ a.text-dark:focus {
 }
 
 /*
-    DEMO STYLE
+  STYLE
 */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   background: #fafafa;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
@@ -15580,7 +15620,6 @@ a:focus {
 
 .nav-link {
   font-weight: 700;
-  letter-spacing: 0.4rem;
 }
 
 .line {
@@ -15630,6 +15669,16 @@ span {
 
 #sidebar.active .sidebar-header strong {
   display: block;
+  font-size: 0.85em;
+  margin-bottom: 0px;
+  line-height: 0.9;
+}
+
+#sidebar.active .sidebar-header strong i {
+  margin-right: 0;
+  display: block;
+  font-size: 1.8em;
+  margin-bottom: 5px;
 }
 
 #sidebar ul li a {
@@ -15662,8 +15711,9 @@ span {
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
+  padding: 16px;
   background: #6d7fcc;
+  text-align: center;
 }
 
 #sidebar .sidebar-header strong {
@@ -15674,6 +15724,10 @@ span {
 #sidebar ul.components {
   padding: 20px 0;
   border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li .download {
+  text-align: center;
 }
 
 #sidebar ul li a {
@@ -15753,7 +15807,7 @@ a.article:hover {
 
 #content {
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -15820,5 +15874,33 @@ a.article:hover {
   #sidebarCollapse span {
     display: none;
   }
+
+  .nav-item i {
+    font-size: 1.5em;
+  }
+}
+
+.nav-item {
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-item a {
+  font-family: 'Noto Sans KR';
+}
+
+.nav-item i {
+  font-size: 1.2em;
+}
+
+.nav-item .dropdown-toggle::after {
+  right: 0;
+  top: 50%;
+}
+
+.nav-item .dropdown-menu {
+  font-size: 0.75rem;
+  min-width: 7rem;
+  left: -1.5rem;
 }
 

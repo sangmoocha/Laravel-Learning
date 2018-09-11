@@ -19,5 +19,37 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
-// Adding Font Awesome to Your Compile
-$fa-font-path:        "../webfonts";
+// fortawesome
+$fa-font-path: "../webfonts";
+
+// class color setting
+.blue {
+  color: $blue;
+}
+.indigo {
+  color: $indigo;
+}
+.purple {
+  color : $purple;
+}
+.pink {
+  color: $pink;
+}
+.red {
+  color: $red;
+}
+.orange {
+  color: $orange;
+}
+.yellow {
+  color: $yellow;
+}
+.green {
+  color: $green;
+}
+.teal { 
+  color: $teal;
+}
+.cyan {
+  color: $cyan;
+}

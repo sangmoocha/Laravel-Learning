@@ -1,6 +1,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 
 // fortawesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -15,16 +16,16 @@
 @import '~bootstrap/scss/bootstrap';
 
 /*
-    DEMO STYLE
+  STYLE
 */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   background: #fafafa;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
@@ -59,7 +60,7 @@ a {
 
 .nav-link {
   font-weight: 700;
-  letter-spacing: 0.4rem;
+  // letter-spacing: 0.4rem;
 }
 
 .line {
@@ -97,6 +98,15 @@ i, span {
     }
     .sidebar-header strong {
       display: block;
+      font-size: 0.85em;
+      margin-bottom: 0px;
+      line-height: 0.9;
+      i {
+        margin-right: 0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+      }
     }
   }
   ul li a {
@@ -129,8 +139,9 @@ i, span {
     }
   }
   .sidebar-header {
-    padding: 20px;
+    padding: 16px;
     background: #6d7fcc;
+    text-align: center;
     strong {
       display: none;
       font-size: 1.8em;
@@ -142,6 +153,9 @@ i, span {
       border-bottom: 1px solid #47748b;
     }
     li {
+      .download {
+        text-align: center;
+      }
       a {
         padding: 10px;
         font-size: 1.1em;
@@ -161,7 +175,6 @@ i, span {
     }
   }
 }
-
 a {
   &[aria-expanded="true"] {
     color: #fff;
@@ -219,7 +232,7 @@ a {
 
 #content {
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   min-height: 100vh;
   transition: all 0.3s;
 }
@@ -275,5 +288,31 @@ a {
   }
   #sidebarCollapse span {
     display: none;
+  }
+  
+  .nav-item {
+    i {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.nav-item {
+  padding-left: 10px;
+  margin-right: 10px;
+  a {
+    font-family: 'Noto Sans KR';
+  }
+  i {
+    font-size: 1.2em;
+  }
+  .dropdown-toggle::after {
+    right: 0;
+    top: 50%;
+  }
+  .dropdown-menu {
+    font-size: 0.75rem;
+    min-width: 7rem;
+    left: -1.5rem;
   }
 }
