@@ -1,6 +1,7 @@
 {
+    "/js/frame.js": "/js/frame.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/css/frame.css": "/css/frame.css",
-    "/js/frame.js": "/js/frame.js"
+    "/css/welcome.css": "/css/welcome.css",
+    "/css/frame.css": "/css/frame.css"
 }

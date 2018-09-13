@@ -8,13 +8,11 @@
 
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-
   <title>{{ config('app.name', 'Laravel') }}</title>
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="{{ asset('js/frame.js') }}" defer></script>
-
+  {{-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> --}}
   <!-- Styles -->
   <link href="{{ asset('css/frame.css') }}" rel="stylesheet">
 </head>
@@ -25,10 +23,9 @@
       <!-- Sidebar  -->
       <nav id="sidebar">
         <div class="sidebar-header">
-          
           <h3>
-            <i class="fab fa-laravel red"></i> 
-            Laravel 5.7
+            
+            ❤(◕‿◕✿)
           </h3>
           <strong>
             <i class="fab fa-laravel red "></i>
@@ -38,16 +35,16 @@
 
         <ul class="list-unstyled components">
           <li>
-            <a href="/home">
+            <a href="/">
               <i class="fas fa-home"></i>
               Home
             </a>
           </li>
           <li>
-            <a href="#">
+            <router-link to="/about">
               <i class="fas fa-briefcase"></i>
               About
-            </a>
+            </router-link>
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
               <i class="fas fa-copy"></i>
               Pages
@@ -116,10 +113,10 @@
                    <span>{{ Auth::user()->name }}</span>
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">
+                  <router-link to="/profile" class="dropdown-item">
                     <i class="fas fa-user-edit green"></i>
                     프로필
-                  </a>
+                  </router-link>
                   <a 
                     class="dropdown-item"
                     href="{{ route('logout') }}" 
@@ -136,9 +133,9 @@
               </ul>
           </div>
         </nav>
-        <main class="py-4">
-          @yield('content')
-        </main>
+        <div class="container">
+          <router-view></router-view>
+        </div>
       </div>
     </div>
   </div>

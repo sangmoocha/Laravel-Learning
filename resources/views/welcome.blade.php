@@ -13,15 +13,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+         <!-- Styles -->
+         <link rel="stylesheet" href="/css/app.css">
 
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" id="app">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -35,7 +32,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                     ლ(╹◡╹ლ) 
                 </div>
 
                 <div class="links">

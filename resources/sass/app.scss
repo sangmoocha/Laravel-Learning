@@ -1,7 +1,3 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
@@ -13,58 +9,41 @@
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-html, body {
-  background-color: #fff;
-  color: #636b6f;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 200;
-  height: 100vh;
-  margin: 0;
+// class color setting
+.blue {
+  color: $blue;
 }
-
-.full-height {
-  height: 100vh;
+.indigo {
+  color: $indigo;
 }
-
-.flex-center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.purple {
+  color : $purple;
 }
-
-.position-ref {
-  position: relative;
+.pink {
+  color: $pink;
 }
-
-.top-right {
-  position: absolute;
-  right: 10px;
-  top: 18px;
+.red {
+  color: $red;
 }
-
-.content {
-  text-align: center;
+.orange {
+  color: $orange;
 }
-
-.title {
-  font-size: 84px;
+.orangered{
+  color: orangered;
 }
-
-.links > a {
-  color: #636b6f;
-  padding: 0 25px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  text-decoration: none;
-  text-transform: uppercase;
+.yellow {
+  color: $yellow;
 }
-
-.m-b-md {
-  margin-bottom: 30px;
+.green {
+  color: $green;
+}
+.teal { 
+  color: $teal;
+}
+.cyan {
+  color: $cyan;
 }

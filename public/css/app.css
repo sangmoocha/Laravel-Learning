@@ -1,44 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);.blue {
-  color: #3490dc;
-}
-
-.indigo {
-  color: #6574cd;
-}
-
-.purple {
-  color: #9561e2;
-}
-
-.pink {
-  color: #f66D9b;
-}
-
-.red {
-  color: #e3342f;
-}
-
-.orange {
-  color: #f6993f;
-}
-
-.yellow {
-  color: #ffed4a;
-}
-
-.green {
-  color: #38c172;
-}
-
-.teal {
-  color: #4dc0b5;
-}
-
-.cyan {
-  color: #6cb2eb;
-}
-
-/*!
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic);@import url(https://fonts.googleapis.com/css?family=Nunito);/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -15569,67 +15529,47 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
 }
 
-.navbar-laravel {
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.blue {
+  color: #3490dc;
 }
 
-html,
-body {
-  background-color: #fff;
-  color: #636b6f;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 200;
-  height: 100vh;
-  margin: 0;
+.indigo {
+  color: #6574cd;
 }
 
-.full-height {
-  height: 100vh;
+.purple {
+  color: #9561e2;
 }
 
-.flex-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.pink {
+  color: #f66D9b;
 }
 
-.position-ref {
-  position: relative;
+.red {
+  color: #e3342f;
 }
 
-.top-right {
-  position: absolute;
-  right: 10px;
-  top: 18px;
+.orange {
+  color: #f6993f;
 }
 
-.content {
-  text-align: center;
+.orangered {
+  color: orangered;
 }
 
-.title {
-  font-size: 84px;
+.yellow {
+  color: #ffed4a;
 }
 
-.links > a {
-  color: #636b6f;
-  padding: 0 25px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  text-decoration: none;
-  text-transform: uppercase;
+.green {
+  color: #38c172;
 }
 
-.m-b-md {
-  margin-bottom: 30px;
+.teal {
+  color: #4dc0b5;
+}
+
+.cyan {
+  color: #6cb2eb;
 }
 

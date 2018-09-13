@@ -1,31 +1,17 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
-
-// fortawesome
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/brands.scss";
-
-
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// 공용 파일 불러오기 
+@import 'app';
 
 /*
   STYLE
 */
 
 body {
-  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  font-family: 'Nunito', 'Nanum Gothic', sans-serif;
   background: #fafafa;
 }
 
 p {
-  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  font-family: 'Nunito', 'Nanum Gothic', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
@@ -300,9 +286,6 @@ a {
 .nav-item {
   padding-left: 10px;
   margin-right: 10px;
-  a {
-    font-family: 'Noto Sans KR';
-  }
   i {
     font-size: 1.2em;
   }
