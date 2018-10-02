@@ -1,7 +1,9 @@
 {
+    "/js/master.js": "/js/master.js",
     "/js/frame.js": "/js/frame.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/welcome.css": "/css/welcome.css",
+    "/css/master.css": "/css/master.css",
     "/css/frame.css": "/css/frame.css"
 }

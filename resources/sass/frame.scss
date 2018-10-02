@@ -1,6 +1,10 @@
 // 공용 파일 불러오기 
 @import 'app';
 
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 /*
   STYLE
 */
@@ -139,9 +143,6 @@ i, span {
       border-bottom: 1px solid #47748b;
     }
     li {
-      .download {
-        text-align: center;
-      }
       a {
         padding: 10px;
         font-size: 1.1em;

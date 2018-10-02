@@ -3,7 +3,7 @@
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
- */
+**/
 
 require('./bootstrap');
 
@@ -27,7 +27,7 @@ Vue.use(VueRouter)
   */
 
 let routes = [
-    { path: '/profile', component: require('./components/ExampleComponent.vue') },
+    { path: '/profile', component: require('./components/auth/ProfileComponent.vue') },
     { path: '/about', component: require('./components/AboutComponent.vue') }
   ]
   
@@ -42,9 +42,13 @@ let routes = [
   })
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('about-component', require('./components/AboutComponent.vue'));
 
 const app = new Vue({
     el: '#app',
     router,
+    methods: {
+      sidebarCollapse: function () {
+        $('#sidebar').toggleClass('active');
+      }
+    }
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app()->getLocale() }}">
 
 <head>
   <meta charset="utf-8">
@@ -9,10 +9,8 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ config('app.name', 'Laravel') }}</title>
-
   <!-- Scripts -->
   <script src="{{ asset('js/frame.js') }}" defer></script>
-  {{-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> --}}
   <!-- Styles -->
   <link href="{{ asset('css/frame.css') }}" rel="stylesheet">
 </head>
@@ -24,7 +22,6 @@
       <nav id="sidebar">
         <div class="sidebar-header">
           <h3>
-            
             ❤(◕‿◕✿)
           </h3>
           <strong>
@@ -86,7 +83,7 @@
             <a href="https://github.com/sangmoocha/Laravel-Learning/archive/master.zip" class="download">소스 내려받기</a>
           </li>
           <li>
-            <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+            <a href="https://github.com/sangmoocha/Laravel-Learning" class="article">소스 보기</a>
           </li>
         </ul>
       </nav>
@@ -97,7 +94,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
 
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <button v-on:click="sidebarCollapse" id="sidebarCollapse" class="btn btn-info">
               <i class="fas fa-align-left"></i>
               <span>메뉴</span>
             </button>

@@ -1,49 +1,62 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
-         <!-- Styles -->
-         <link rel="stylesheet" href="/css/app.css">
-
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height" id="app">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                     ლ(╹◡╹ლ) 
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+@section('content')
+    <div class="container-fluid ">
+        <div class="row justify-content-center">
+            <div class="title m-b-md">개발 환경</div>
+            <div class="col-md-10">
+                <div class="card-columns">
+                    <div class="card bg-light">
+                        <div class="card-header orangered text-center">Server</div>
+                        <div class="card-body text-left">
+                            <ul>
+                                <li>4.18.0-kali1-amd64</li>
+                                <li>Nginx 1.14.0</li>
+                                <li>Postfix 3.3.0</li>
+                                <li>MariaDB 10.1.34</li>
+                                <li>phpMyAdmin</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-light">
+                        <div class="card-header orangered text-center">Laravel 5.7</div>
+                        <div class="card-body text-left">
+                            <ul>
+                                <li>zip</li>
+                                <li>unzip</li>
+                                <li>PHP 7.2.10</li>
+                                <li>php7.2-xml</li>
+                                <li>php7.2-fpm</li>
+                                <li>php7.2-curl</li>
+                                <li>php7.2-mysql</li>
+                                <li>php7.2-mbstring</li>
+								<li>Composer 1.7.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-light">
+                        <div class="card-header orangered text-center">Front-End</div>
+                        <div class="card-body text-left">
+                            <ul>
+                                <li>vue 2.5.7</li>
+                                <LI>vform 1.0.0</LI>
+                                <LI>moment 2.22.2</LI>
+                                <LI>vue-router 3.0.1</LI>
+                                <LI>fontawesome 5.3.1</LI>
+                                <LI>sweetalert2 7.26.29</LI>
+                                <LI>axios 0.18</LI>
+                                <LI>bootstrap 4.0.0</LI>
+                                <LI>cross-env 5.1</LI>
+                                <LI>jquery 3.2</LI>
+                                <LI>laravel-mix 2.0</LI>
+                                <LI>lodash 4.17.5</LI>
+                                <LI>popper.js 1.12</LI>
+								<li>admin-lte v3.0.0-alpha.2</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+@endsection
